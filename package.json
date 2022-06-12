@@ -1,0 +1,28 @@
+{
+  "name": "cursonodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nidiax/api-nodejs.git"
+  },
+  "author": "Nidiax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nidiax/api-nodejs/issues"
+  },
+  "homepage": "https://github.com/Nidiax/api-nodejs#readme",
+  
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
