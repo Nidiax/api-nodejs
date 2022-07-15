@@ -1,0 +1,23 @@
+{
+    "notes" : [
+        {
+            "id": 1,
+            "content": "This is the first note",
+            "date": "2022-05-29 12:45 am",
+            "important":true
+        },
+        {
+            "id": 2,
+             "content": "This is the second note",
+             "date": "2022-05-29 12:45 am",
+             "important":false
+        },
+        {
+             "id": 3,
+             "content":"This is the hird note",
+             "date": "2022-05-29 12:45 am",
+             "important":true
+        }
+    ]
+     
+}

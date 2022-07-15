@@ -1,3 +1,4 @@
+
 const { response, request } = require('express');
 /*para cargar modulos
 require = esta requiere el modulo
@@ -12,26 +13,6 @@ const app = express();
 //a un objeto 
 app.use(express.json())
 
-let notes = [
-   {
-       "id": 1,
-       "content": "This is the first note",
-       "date": "2022-05-29 12:45 am",
-       "important":true
-   },
-   {
-       "id": 2,
-        "content": "This is the second note",
-        "date": "2022-05-29 12:45 am",
-        "important":false
-   },
-    {
-        "id": 3,
-        "content":"This is the hird note",
-        "date": "2022-05-29 12:45 am",
-        "important":true
-    }
-]
 
 
 
@@ -53,11 +34,6 @@ callback es una funcion que se ejecuta cuando se recibe una peticion/
     response.end(JSON.stringify(notes)) //devuelve la respuesta
 });
 *\
-
-
-
-
-
 /*
 el servidor debe de escuchar en algún puerto
 */
@@ -102,7 +78,6 @@ if(!note.content){
         Error: 'note.content is missing :('
     })
 }
-
     //de la nota vamos a recuperar la id de la nota
     const ids = notes.map(note => note.id)
     //recuperar la idea max
@@ -123,3 +98,6 @@ if(!note.content){
 const port = 3001;
 app.listen(port)
 console.log(`Servidor corriendo en el puerto ${port}`);
+
+
+exports.app = app;
