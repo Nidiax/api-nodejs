@@ -116,6 +116,8 @@ if(!note.content){
     response.json(newNota)
 })
 
+//pasando parametros
+//request solicitud, response respuesta
 app.post('/api/suma', (request, response) => {
     suma(request,response)
 })
