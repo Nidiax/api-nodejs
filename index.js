@@ -8,12 +8,32 @@ una constante es una variable que no puede cambiar
 //const http = require('http');
 const express = require('express');
 const app = express();
+const suma = require('./controllers/sumaControllers/post.js')
 
 //soportar la request que se le esta indicando  cuando se le pasa
 //a un objeto 
 app.use(express.json())
 
-
+const notes = [
+    {
+        "id": 1,
+        "content": "This is the first note",
+        "date": "2022-05-29 12:45 am",
+        "important":true
+    },
+    {
+        "id": 2,
+         "content": "This is the second note",
+         "date": "2022-05-29 12:45 am",
+         "important":false
+    },
+    {
+         "id": 3,
+         "content":"This is the hird note",
+         "date": "2022-05-29 12:45 am",
+         "important":true
+    }
+]
 
 
 /*----------------------------------------------------------------------//
@@ -95,6 +115,11 @@ if(!note.content){
     notes = notes.concat(newNota)
     response.json(newNota)
 })
+
+app.post('/api/suma', (request, response) => {
+    suma(request,response)
+})
+
 const port = 3001;
 app.listen(port)
 console.log(`Servidor corriendo en el puerto ${port}`);
