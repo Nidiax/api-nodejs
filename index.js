@@ -122,6 +122,10 @@ app.post('/api/suma', (request, response) => {
     suma(request,response)
 })
 
+app.post('/api/character', (request, response) => {
+    
+})
+
 const port = 3001;
 app.listen(port)
 console.log(`Servidor corriendo en el puerto ${port}`);
